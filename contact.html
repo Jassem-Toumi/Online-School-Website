@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us</title>
+         
+    <!-- Linking CSS file -->
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/main__stylesheet.css">
+
+    <!-- Linking to google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Linking the Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- NAVBAR SECTION 
+    =========================================-->
+    <nav>
+        <div class="container nav__container">
+            <!-- Logo -->
+            <a href="./index.html" class="logo">
+                <h1>MetaX</h1>
+            </a>
+
+
+                <form role="search">
+                    <input type="search" 
+                     placeholder="Search the site..."
+                     aria-label="Search through site content">
+                    <button class="btn">Search</button>
+                </form>
+
+
+
+              <!-- Search-box For extra-small screens -->
+              <button class="search_icon">
+                <i class='bx bx-search-alt'></i>
+              </button>
+            
+
+            <!-- navigation menu -->
+            <ul class="nav__menu">
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./about.html">About</a>
+                </li>
+                <li>
+                    <a href="./courses.html">Courses</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Contact</a>
+                </li>
+            </ul>
+            <!-- Burger Menu-->
+            <button id="open-menu-btn" class=" burger-btn activate-burger-btn">
+                <i class='bx bx-menu-alt-left'></i>
+            </button>
+            <button id="close-menu-btn" class="burger-btn ">
+                <i class='bx bxs-x-circle'></i>
+            </button>
+        </div>
+    </nav>
+    <!-- Search-box Section on Small screens -->
+    <div class="search__section-Window">
+        <form role="search">
+            <input type="search" 
+             placeholder="Search the site..."
+             aria-label="Search through site content">
+            <button>Search</button>
+        </form>
+        <h4>Popular right now</h4>
+        <div class="popular-search-results">
+               <i class='bx bx-search-alt-2' ></i>
+               <a href=""> Vue Js</a>
+        </div>
+        <div class="popular-search-results">
+               <i class='bx bx-search-alt-2' ></i>
+              <a href="">Blockchain</a>
+        </div>
+        <div class="popular-search-results">
+               <i class='bx bx-search-alt-2' ></i>
+               <a href="">Free courses</a>
+        </div>
+        <button  class="close-searchBox-btn ">
+            <i class='bx bxs-x-circle'></i>
+        </button>
+    </div>
+
+
+    <!-- Contact Section-->
+    <section class="contact">
+        <div class="container contact__container">
+
+            <aside class="contact__aside">
+                <div class="aside__image">
+                    <img src="./images/undraw_contact.svg" alt="">
+                </div>
+
+                <h1>Contact Us</h1>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum voluptas animi ipsam ea, itaque sequi eius. Dolores totam maiores saepe!
+                </p>
+
+                <ul class="contact__details">
+                    <li>
+                        <i class='bx bxs-phone-call' ></i>
+                        <h5>(+1) 075382364</h5>
+                    </li>
+                    <li>
+                        <i class='bx bx-envelope' ></i>
+                        <h5>supportteam@metax.com</h5>
+                    </li>
+                    <li>
+                        <i class='bx bxs-map'></i>
+                        <h5>California, US</h5>
+                    </li>
+                </ul>
+
+                <ul class="contact__socials">
+                    <li>
+                        <a href="#">
+                            <i class='bx bxl-facebook-square'></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='bx bxl-instagram-alt'></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class='bx bxl-linkedin-square' ></i>
+                      </a>
+                    </li>
+                </ul>
+            </aside>
+
+            <form class="contact__form">
+                <div class="form__name">
+                    <input type="text" name="first name" placeholder="First Name" required>
+                    <input type="text" name="last name" placeholder="Last Name" required>
+                </div>
+                <input type="email" name="email address" placeholder="Your Email Address" required>
+                <textarea name="message" placeholder="Write Your Message" required></textarea>
+                <button type="submit" class="btn btn-primary">
+                    Send
+                </button>
+            </form>
+
+        </div>
+    </section>
+
+
+   <!-- FOOTER SECTION
+    ======================================== -->
+    <footer>
+        <div class="container footer__container">
+            
+            <div class="footer__col">
+               <h3>MetaX</h3>
+               <ul class="footer__list">
+                   <li class="footer__list-item">
+                     <a href="./about.html"> About</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                     <a href="#"> What We Offer</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                      <a href="#">Leadership</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                     <a href="#">Careers</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                     <a href="#">Catalog</a> 
+                   </li>
+
+                   <li class="footer__list-item">
+                      <a href="#">Courses Plus</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                      <a href="#">Professional Certificates</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                      <a href="#">Become a Partner</a>
+                   </li>
+               </ul>
+            </div>
+
+            <div class="footer__col">
+               <h3>Community</h3>
+               <ul class="footer__list">
+                   <li class="footer__list-item">
+                      <a href="#">Learners</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                     <a href="#">Partners</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                     <a href="#">Developers</a> 
+                   </li>
+
+                   <li class="footer__list-item">
+                     <a href="#">Beta Testers</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                      <a href="#">Translators</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                     <a href="#">Tech Blog</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                     <a href="#"> Teahing Center</a>
+                   </li>
+               </ul>
+            </div>
+
+            <div class="footer__col">
+               <h3>Privacy</h3>
+               <ul class="footer__list">
+                   <li class="footer__list-item">
+                      <a href="#">Privacy Policy</a> 
+                   </li>
+
+                   <li class="footer__list-item">
+                     <a href="#"> Terms and Conditions</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                      <a href="#">Refund Policy</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                      <a href="#">Data Security</a>
+                   </li>
+
+               </ul>
+            </div>
+
+            <div class="footer__col footer__col-last">
+               <h3>Download App</h3>
+               <a href="#"><img src="./images/App_Store_(iOS)-Badge-Logo.wine.png" alt=""></a>
+               <a href="#"><img src="./images/google-play-badge.png" alt=""></a>
+               <img class="certified-badge" src="./images/Certified_Badge.png" alt="">
+            </div>
+        </div>
+        
+        <div class="container copywright__container">
+           <small> © 2022 MetaX Inc. All rights reserved.</small>
+           
+           <div class="footer__social-icons">
+            <a href="#">
+                <i class='bx bxl-twitter'></i>
+               </a>
+               
+               <a href="#">
+                <i class='bx bxl-facebook-square'></i>
+               </a>
+               
+               <a href="#">
+                <i class='bx bxl-linkedin-square'></i>
+               </a>
+               
+               <a href="#">
+                <i class='bx bxl-youtube'></i>
+               </a>
+           </div>
+           
+        </div>
+    </footer>
+    
+        <!-- Linking Javascript File -->
+        <script src="./javascript/script.js"></script>
+</body>
+</html>

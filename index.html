@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaX Online-school</title>
+
+    <!-- Linking CSS file -->
+    <link rel="stylesheet" href="./css/main__stylesheet.css">
+
+    <!-- Linking to google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Linking the Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Swiper CDN -->
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+
+
+</head>
+
+<body>
+
+    <!-- Navbar section 
+    =========================================-->
+    <nav>
+        <div class="container nav__container">
+            <!-- Logo -->
+            <a href="./index.html" class="logo">
+                <h1>MetaX</h1>
+            </a>
+
+
+                <form role="search">
+                    <input type="search" 
+                     placeholder="Search the site..."
+                     aria-label="Search through site content">
+                    <button class="btn">Search</button>
+                </form>
+
+
+
+              <!-- Search-box For extra-small screens -->
+              <button class="search_icon">
+                <i class='bx bx-search-alt'></i>
+              </button>
+            
+
+            <!-- navigation menu -->
+            <ul class="nav__menu">
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./about.html">About</a>
+                </li>
+                <li>
+                    <a href="./courses.html">Courses</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Contact</a>
+                </li>
+            </ul>
+            <!-- Burger Menu-->
+            <button id="open-menu-btn" class=" burger-btn activate-burger-btn">
+                <i class='bx bx-menu-alt-left'></i>
+            </button>
+            <button id="close-menu-btn" class="burger-btn ">
+                <i class='bx bxs-x-circle'></i>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- /* Search-box Section on Small screens */ -->
+    <div class="search__section-Window">
+        <form role="search">
+            <input type="search" 
+             placeholder="Search the site..."
+             aria-label="Search through site content">
+            <button>Search</button>
+        </form>
+        <h4>Popular right now</h4>
+        <div class="popular-search-results">
+               <i class='bx bx-search-alt-2' ></i>
+               <a href=""> Vue Js</a>
+        </div>
+        <div class="popular-search-results">
+               <i class='bx bx-search-alt-2' ></i>
+              <a href=""> Blockchain</a>
+        </div>
+        <div class="popular-search-results">
+               <i class='bx bx-search-alt-2' ></i>
+               <a href="">Free courses</a>
+        </div>
+        <button  class="close-searchBox-btn ">
+            <i class='bx bxs-x-circle'></i>
+        </button>
+    </div>
+
+    <!-- Header Section
+    ========================================-->
+    <header>
+        <div class="container header__container">
+            <div class="header__left">
+                <h1>Grow your Skills to advance your career path</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, commodi asperiores molestias tenetur ea excepturi.</p>
+                <a href="./courses.html" class="btn">
+                    Get Started
+                </a>
+            </div>
+            <div class="header__right">
+                <div class="header__right-image">
+                    <img src="./images/undraw_pair_programming_re_or4x.svg" alt="illustration">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Categories Section
+    ======================================= -->
+    <section class="categories">
+        <div class="container categories__container">
+            <div class="categories__left">
+                <h1>Categories</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi qui, vero harum possimus expedita fugit distinctio necessitatibus. Corporis, nihil impedit.
+                </p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="categories__right">
+                <article class="category">
+                    <span class="category__icon">
+                        <img src="./images/blockchain.png" alt="Icon" class="category__btn" >
+                    </span>
+                    <h5>Blockchain</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon">
+                        <img src="./images/graphic-design.png" alt=" Icon" class="category__btn" >
+                    </span>
+                    <h5>Graphic Design</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon">
+                        <img src="./images/finance.png" alt="Icon" class="category__btn" >
+                    </span>
+                    <h5>Finance</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon">
+                        <img src="./images/social-marketing.png" alt="Icon" class="category__btn" >
+                    </span>
+                    <h5>Marketing</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon">
+                        <img src="./images/planning.png" alt="Icon" class="category__btn" >
+                    </span>
+                    <h5>Project Management</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon">
+                        <img src="./images/creative-writing.png" alt="Icon" class="category__btn" >
+                    </span>
+                    <h5>Creative Writing</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Courses Section
+    ========================================-->
+    <section class="courses">
+        <h1>Our Popular Courses</h1>
+        <div class="container courses__container">
+            
+            <article class="course">
+                <div class="image">
+                    <img src="./images/blockchain-course.jpg" alt="">
+                </div>
+<!-- 
+                <div class="course__header">
+                    <span class="rating">
+                        <h5 class="rating-number">4.7</h5>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half' ></i>
+                        <h5 class="rating-count">(178,102)</h5>
+                    </span>
+                    <span class="price">
+                        <h5>$17.99</h5>
+                    </span>
+                </div> -->
+
+                <div class="courses__info">
+                    <h4>Blockchain and Bitcoin Fundamentals</h4>
+                <p>Learn the key elements of blockchain and Bitcoin in this bestselling video course and accompanying PDF glossary.</p>
+                </div>
+
+                <div class="button">
+                    <a href="./courses.html" class="btn">Learn More</a>
+                </div>
+            </article>
+
+            <article class="course">
+                <div class="image">
+                    <img src="./images/Cover_graphic-design.jpg" alt="">
+                </div>
+
+                <!-- <div class="course__header">
+                    <span class="rating">
+                        <h5 class="rating-number">4.7</h5>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half' ></i>
+                        <h5 class="rating-count">(78,19)</h5>
+                    </span>
+                    <span class="price price_free">
+                        <h5>Free</h5>
+                    </span>
+                </div> -->
+                
+                <div class="courses__info">
+                    <h4>Graphic Design Masterclass - Learn GREAT Design</h4>
+                <p>The Ultimate Graphic Design Course Which Covers Photoshop, Illustrator, InDesign,Design Theory, Branding and Logo Design</p>
+                </div>
+                <div class="button">
+                    <a href="./courses.html" class="btn">Learn More</a>
+                </div>
+            </article>
+
+            <article class="course">
+                <div class="image">
+                    <img src="./images/Cover__BusinessB.jpg" alt="">
+                </div>
+
+                <!-- <div class="course__header">
+                    <span class="rating">
+                        <h5 class="rating-number">4.7</h5>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half' ></i>
+                        <h5 class="rating-count">(129,672)</h5>
+                    </span>
+                    <span class="price">
+                        <h5>$15.99</h5>
+                    </span>
+                </div> -->
+
+                <div class="courses__info">
+                    <h4>Digital Marketing: The Ultimate Guide to Strategic Marketing</h4>
+                <p class="courses_p_info">Master Digital Marketing: Instagram, Optimization, Social Media, Analytics, SEO, PPC, Email, WebCopy, UX, Content Mkt</p>
+                </div>
+                <div class="button">
+                    <a href="./courses.html" class="btn">Learn More</a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- FAQ Section
+    ======================================== -->
+    <section class="faqs">
+        <h1>Frequently Asked Questions</h1>
+        <div class="container faqs__container">
+            <div class="faqs__column">
+                <article class="faq">
+                    <div class="faq__icon">
+                        <i class='bx bx-plus-circle' style='color:#ffffff; font-size: 24px;'  ></i>
+                    </div>
+                    <h4>How do I know the right course for me?</h4>
+                    <div class="question__answer">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum corrupti voluptatibus, aspernatur reiciendis debitis dignissimos ex mollitia voluptate, dolor nostrum exercitationem numquam voluptates fugiat dolorem, at facere vero quasi laboriosam.</p>
+                    </div>
+                </article>
+    
+    
+                <article class="faq">
+                    <div class="faq__icon">
+                        <i class='bx bx-plus-circle' style='color:#ffffff; font-size: 24px;'  ></i>
+                    </div>
+                    <h4>How do I know the right course for me?</h4>
+                    <div class="question__answer">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum corrupti voluptatibus, aspernatur reiciendis debitis dignissimos ex mollitia voluptate, dolor nostrum exercitationem numquam voluptates fugiat dolorem, at facere vero quasi laboriosam.</p>
+                    </div>
+                </article>
+    
+    
+                <article class="faq">
+                    <div class="faq__icon">
+                        <i class='bx bx-plus-circle' style='color:#ffffff; font-size: 24px;'  ></i>
+                    </div>
+                    <h4>How do I know the right course for me?</h4>
+                    <div class="question__answer">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum corrupti voluptatibus, aspernatur reiciendis debitis dignissimos ex mollitia voluptate, dolor nostrum exercitationem numquam voluptates fugiat dolorem, at facere vero quasi laboriosam.</p>
+                    </div>
+                </article>    
+                    
+    
+                <article class="faq">
+                    <div class="faq__icon">
+                        <i class='bx bx-plus-circle' style='color:#ffffff; font-size: 24px;'  ></i>
+                    </div>
+                    <h4>How do I know the right course for me?</h4>
+                    <div class="question__answer">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum corrupti voluptatibus, aspernatur reiciendis debitis dignissimos ex mollitia voluptate, dolor nostrum exercitationem numquam voluptates fugiat dolorem, at facere vero quasi laboriosam.</p>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="faqs__column">
+                <article class="faq">
+                    <div class="faq__icon">
+                        <i class='bx bx-plus-circle' style='color:#ffffff; font-size: 24px;'  ></i>
+                    </div>
+                    <h4>How do I know the right course for me?</h4>
+                    <div class="question__answer">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum corrupti voluptatibus, aspernatur reiciendis debitis dignissimos ex mollitia voluptate, dolor nostrum exercitationem numquam voluptates fugiat dolorem, at facere vero quasi laboriosam.</p>
+                    </div>
+                </article>
+    
+    
+                <article class="faq">
+                    <div class="faq__icon">
+                        <i class='bx bx-plus-circle' style='color:#ffffff; font-size: 24px;'  ></i>
+                    </div>
+                    <h4>How do I know the right course for me?</h4>
+                    <div class="question__answer">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum corrupti voluptatibus, aspernatur reiciendis debitis dignissimos ex mollitia voluptate, dolor nostrum exercitationem numquam voluptates fugiat dolorem, at facere vero quasi laboriosam.</p>
+                    </div>
+                </article>
+    
+    
+                <article class="faq">
+                    <div class="faq__icon">
+                        <i class='bx bx-plus-circle' style='color:#ffffff; font-size: 24px;'  ></i>
+                    </div>
+                    <h4>How do I know the right course for me?</h4>
+                    <div class="question__answer">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum corrupti voluptatibus, aspernatur reiciendis debitis dignissimos ex mollitia voluptate, dolor nostrum exercitationem numquam voluptates fugiat dolorem, at facere vero quasi laboriosam.</p>
+                    </div>
+                </article>
+    
+    
+                <article class="faq">
+                    <div class="faq__icon">
+                        <i class='bx bx-plus-circle' style='color:#ffffff; font-size: 24px;'  ></i>
+                    </div>
+                    <h4>How do I know the right course for me?</h4>
+                    <div class="question__answer">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum corrupti voluptatibus, aspernatur reiciendis debitis dignissimos ex mollitia voluptate, dolor nostrum exercitationem numquam voluptates fugiat dolorem, at facere vero quasi laboriosam.</p>
+                    </div>
+                </article>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <!-- Testimonials Section
+    ========================================= -->
+    <section class="container testimonials__container mySwiper">
+        <h1>Alumnia Testimonials</h1>
+
+            <div class="swiper-wrapper">
+                <article class="testimonial swiper-slide">
+                    <div class="avatar avatar_1">
+                    </div>
+                    <div class="testimonial__info">
+                    <h3>Emma Walker</h3>
+                    <h4>UX Design</h4>
+                    <blockquote>
+                        <i class='bx bxs-quote-left bx-fade-down'></i>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, ad.</p>
+                    </blockquote>
+                    </div> 
+                </article>
+    
+    
+                <article class="testimonial swiper-slide">
+                    <div class="avatar avatar_2">
+                    </div>
+                    <div class="testimonial__info">
+                    <h3>Luke Smith</h3>
+                    <h4>Project Management</h4>
+                    <blockquote>
+                        <i class='bx bxs-quote-left bx-fade-down' ></i>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, ad.</p>
+                        
+                    </blockquote>
+                    </div> 
+                </article>
+    
+    
+                <article class="testimonial swiper-slide">
+                    <div class="avatar avatar_3">
+                        
+                    </div>
+                    <div class="testimonial__info">
+                    <h3>Avery Williams</h3>
+                    <h4>Digital Marketing</h4>
+                    <blockquote>
+                        <i class='bx bxs-quote-left bx-fade-down' ></i>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, ad.</p>
+                    </blockquote>
+                    </div> 
+                </article>
+    
+    
+                <article class="testimonial swiper-slide">
+                    <div class="avatar avatar_4">
+                       
+                    </div>
+                    <div class="testimonial__info">
+                    <h3>Liam Lewis</h3>
+                    <h4>Cloud Computing</h4>
+                    <blockquote>
+                        <i class='bx bxs-quote-left bx-fade-down' ></i>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, ad.</p>
+                    </blockquote>
+                    </div> 
+                </article>
+    
+    
+                <article class="testimonial swiper-slide">
+                    <div class="avatar avatar_5">
+                        
+                    </div>
+                    <div class="testimonial__info">
+                    <h3>Ava Johnson</h3>
+                    <h4>Web Developer</h4>
+                    <blockquote>
+                        <i class='bx bxs-quote-left bx-fade-down'></i>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, ad.</p>
+                    </blockquote>
+                    </div> 
+                </article>
+            </div>
+            <div class="swiper-pagination"></div>
+    </section>
+
+
+    <!-- Footer Section
+    ======================================== -->
+    <footer>
+        <div class="container footer__container">
+            
+            <div class="footer__col">
+               <h3>MetaX</h3>
+               <ul class="footer__list">
+                   <li class="footer__list-item">
+                     <a href="./about.html"> About</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                     <a href="#"> What We Offer</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                      <a href="#">Leadership</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                     <a href="#">Careers</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                     <a href="#">Catalog</a> 
+                   </li>
+
+                   <li class="footer__list-item">
+                      <a href="#">Courses Plus</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                      <a href="#">Professional Certificates</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                      <a href="#">Become a Partner</a>
+                   </li>
+               </ul>
+            </div>
+
+            <div class="footer__col">
+               <h3>Community</h3>
+               <ul class="footer__list">
+                   <li class="footer__list-item">
+                      <a href="#">Learners</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                     <a href="#">Partners</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                     <a href="#">Developers</a> 
+                   </li>
+
+                   <li class="footer__list-item">
+                     <a href="#">Beta Testers</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                      <a href="#">Translators</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                     <a href="#">Tech Blog</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                     <a href="#"> Teahing Center</a>
+                   </li>
+               </ul>
+            </div>
+
+            <div class="footer__col">
+               <h3>Privacy</h3>
+               <ul class="footer__list">
+                   <li class="footer__list-item">
+                      <a href="#">Privacy Policy</a> 
+                   </li>
+
+                   <li class="footer__list-item">
+                     <a href="#"> Terms and Conditions</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                      <a href="#">Refund Policy</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                      <a href="#">Data Security</a>
+                   </li>
+
+               </ul>
+            </div>
+
+            <div class="footer__col footer__col-last">
+               <h3>Download App</h3>
+               <a href="#"><img src="./images/App_Store_(iOS)-Badge-Logo.wine.png" alt=""></a>
+               <a href="#"><img src="./images/google-play-badge.png" alt=""></a>
+               <img class="certified-badge" src="./images/Certified_Badge.png" alt="">
+            </div>
+        </div>
+        
+        <div class="container copywright__container">
+           <small> © 2022 MetaX Inc. All rights reserved.</small>
+           
+           <div class="footer__social-icons">
+            <a href="#">
+                <i class='bx bxl-twitter'></i>
+               </a>
+               
+               <a href="#">
+                <i class='bx bxl-facebook-square'></i>
+               </a>
+               
+               <a href="#">
+                <i class='bx bxl-linkedin-square'></i>
+               </a>
+               
+               <a href="#">
+                <i class='bx bxl-youtube'></i>
+               </a>
+           </div>
+           
+        </div>
+    </footer>
+
+
+
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<!-- Linking Javascript File -->
+<script src="./javascript/script.js"></script>
+
+
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+      
+    <!-- Linking CSS file -->
+    <link rel="stylesheet" href="./css/main__stylesheet.css">
+    <link rel="stylesheet" href="./css/courses.css">
+
+    <!-- Linking to google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Linking the Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <!-- Navbar section 
+    =========================================-->
+    <nav>
+        <div class="container nav__container">
+            <!-- Logo -->
+            <a href="./index.html" class="logo">
+                <h1>MetaX</h1>
+            </a>
+
+
+                <form role="search">
+                    <input type="search" 
+                     placeholder="Search the site..."
+                     aria-label="Search through site content">
+                    <button class="btn">Search</button>
+                </form>
+
+
+
+              <!-- Search-box For extra-small screens -->
+              <button class="search_icon">
+                <i class='bx bx-search-alt'></i>
+              </button>
+            
+
+            <!-- navigation menu -->
+            <ul class="nav__menu">
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./about.html">About</a>
+                </li>
+                <li>
+                    <a href="./courses.html">Courses</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Contact</a>
+                </li>
+            </ul>
+            <!-- Burger Menu-->
+            <button id="open-menu-btn" class=" burger-btn activate-burger-btn">
+                <i class='bx bx-menu-alt-left'></i>
+            </button>
+            <button id="close-menu-btn" class="burger-btn ">
+                <i class='bx bxs-x-circle'></i>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- /* Search-box Section on Small screens */ -->
+    <div class="search__section-Window">
+        <form role="search">
+            <input type="search" 
+             placeholder="Search the site..."
+             aria-label="Search through site content">
+            <button>Search</button>
+        </form>
+        <h4>Popular right now</h4>
+        <div class="popular-search-results">
+               <i class='bx bx-search-alt-2' ></i>
+               <a href=""> Vue Js</a>
+        </div>
+        <div class="popular-search-results">
+               <i class='bx bx-search-alt-2' ></i>
+              <a href=""> Blockchain</a>
+        </div>
+        <div class="popular-search-results">
+               <i class='bx bx-search-alt-2' ></i>
+               <a href="">Free courses</a>
+        </div>
+        <button  class="close-searchBox-btn ">
+            <i class='bx bxs-x-circle'></i>
+        </button>
+    </div>
+
+
+    <!-- COURSES SECTION
+    ================================================ -->
+    <section class="courses">
+
+            <h1>A place to learn something new </h1>
+            
+        <!-- Filter Nav -->
+        <nav class="container courses__nav filter__container">
+            <div class="filter__tab">
+                <span>
+                    <i class='bx bx-filter-alt'></i>
+                    <h3>Filter</h3>
+                </span>
+                <span class="filter__icon-sm">
+                    <i class='bx bxs-plus-circle'></i>
+                </span>
+            </div>
+
+<!-- ====================== Filter Menu ==========================-->
+            <!-- Category -->
+            <div class="filter__menu">
+                <span>
+                    <h4>Category</h4>
+                    <div class="filter__menu-select category__btn">
+                        <h5>-- All</h5>
+                        <i class='bx bxs-down-arrow'></i>
+                    </div>
+                    <ul class="filter__menu-options category__options">
+                        <li data-filter=".All"> <h5>All</h5></li>
+                        <li data-filter=".Development"> <h5>Development</h5></li>
+                        <li data-filter=".Business"><h5>Business</h5></li>
+                        <li data-filter=".Photography"><h5>Photography</h5></li>
+                        <li data-filter=".Design"><h5>Design</h5></li>
+                    </ul>
+                </span>
+
+            <!-- Level -->
+                <span>
+                    <h4>Level</h4>
+                    <div class="filter__menu-select level__btn">
+                        <h5>-- click to pick</h5>
+                        <i class='bx bxs-down-arrow'></i>
+                    </div>
+                    <ul class="filter__menu-options level__options">
+                        <li data-filter=".Beginner"> <h5>Beginner</h5></li>
+                        <li data-filter=".Intermediate"><h5>Intermediate </h5></li>
+                        <li data-filter=".Upper_Intermediate"><h5>Upper intermediate  </h5></li>
+                        <li data-filter=".Advanced"><h5>Advanced</h5></li>
+                    </ul>
+                </span>
+            
+            <!-- TYPE -->
+                <span>
+                    <h4>Type</h4>
+                    <div class="filter__menu-select type__btn">
+                        <h5>-- click to pick</h5>
+                        <i class='bx bxs-down-arrow'></i>
+                    </div>
+                    <ul class="filter__menu-options type__options">
+                        <li data-filter=".Videos"><h5>Videos</h5></li>
+                        <li data-filter=".Courses"><h5>Courses</h5></li>
+                    </ul>
+                </span>
+
+            <!-- LANGUAGE -->
+                <span>
+                    <h4>Language</h4>
+                    <div class="filter__menu-select language__btn">
+                        <h5>-- click to pick</h5>
+                        <i class='bx bxs-down-arrow'></i>
+                    </div>
+                    <ul class="filter__menu-options language__options">
+                        <li data-filter=".Arabic"><h5>Arabic</h5></li>
+                        <li data-filter=".Hindi"><h5>Hindi</h5></li>
+                        <li data-filter=".English"><h5>English</h5></li>
+                        <li data-filter=".Frensh"><h5>Frensh</h5></li>
+                    </ul>
+                </span>
+            </div>
+        </nav> 
+
+         
+           
+        
+        <div class=" courses__container-main">
+            <!-- Course 1 -->
+            <article class="mix All Design Intermediate course__card">
+                <div class="image">
+                    <img src="./images/Cover_graphic-design.jpg" alt="">
+                </div>
+                <div class="course__info">
+                    <div class="course__header">
+                        <span class="rating">
+                            <h5 class="rating-number">4.7</h5>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half' ></i>
+                            <h5 class="rating-count">(78,19)</h5>
+                        </span>
+                        <span class="price price_free">
+                            <h5>Free</h5>
+                        </span>
+                    </div>
+                    <h3 class="title">Graphic Deisgn Tips & Tricks</h3>
+                    <h5 class="subtitle">by: Leah Hendricks</h5>
+                </div>
+                <div class="button">
+                    <a href="./courses.html" class="btn">Start</a>
+                </div>
+            </article>
+            <!-- Course 2 -->
+            <article class="mix All Development Upper_Intermediate course__card">
+                <div class="image">
+                    <img src="./images/Cover_JS.jpg" alt="">
+                </div>
+                <div class="course__info">
+                    <div class="course__header">
+                        <span class="rating">
+                            <h5 class="rating-number">4.7</h5>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half' ></i>
+                            <h5 class="rating-count">(289,678)</h5>
+                        </span>
+                        <span class="price price_free">
+                            <h5>Free</h5>
+                        </span>
+                    </div>
+                    <h3 class="title">Javascript Essential Training</h3>
+                    <h5 class="subtitle">by: Nick Harper</h5>
+                </div>
+                <div class="button">
+                    <a href="./courses.html" class="btn">Start</a>
+                </div>
+            </article>
+            <!-- Course 3 -->
+            <article class="mix All Business Advanced course__card">
+                <div class="image">
+                    <img src="./images/Cover__BusinessA.jpg" alt="">
+                </div>
+                <div class="course__info">
+                    <div class="course__header">
+                        <span class="rating">
+                            <h5 class="rating-number">4.7</h5>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half' ></i>
+                            <h5 class="rating-count">(8,102)</h5>
+                        </span>
+                        <span class="price">
+                            <h5>$15.99</h5>
+                        </span>
+                    </div>
+                    <h3 class="title">Introduction to business management</h3>
+                    <h5 class="subtitle">by: Kayla Areleno</h5>
+                </div>
+                <div class="button">
+                    <a href="./courses.html" class="btn">View</a>
+                </div>
+            </article>
+            <!-- Course 4 -->
+            <article class="mix All Development Beginner course__card">
+                <div class="image">
+                    <img src="./images/blockchain-course.jpg" alt="">
+                </div>
+                <div class="course__info">
+                    <div class="course__header">
+                        <span class="rating">
+                            <h5 class="rating-number">4.7</h5>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half' ></i>
+                            <h5 class="rating-count">(178,102)</h5>
+                        </span>
+                        <span class="price">
+                            <h5>$17.99</h5>
+                        </span>
+                    </div>
+                    <h3 class="title">Blockchain and Bitcoin Fundamentals</h3>
+                    <h5 class="subtitle">by: Leah Hendricks</h5>
+                </div>
+                <div class="button">
+                    <a href="./courses.html" class="btn">View</a>
+                </div>
+            </article>
+            <!-- Course 5 -->
+            <article class="mix All Business Beginner course__card ">
+                <div class="image">
+                    <img src="./images/Cover__BusinessB.jpg" alt="">
+                </div>
+
+                <div class="course__info">
+                    <div class="course__header">
+                        <span class="rating">
+                            <h5 class="rating-number">4.7</h5>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half' ></i>
+                            <h5 class="rating-count">(178,102)</h5>
+                        </span>
+                        <span class="price">
+                            <h5>$15.99</h5>
+                        </span>
+                    </div>
+                    <h3 class="title">Digital Marketing: The Ultimate Guide to Strategic Marketing</h3>
+                    <h5 class="subtitle">by: Fatima Raymond</h5>
+                </div>
+                
+                <div class="button">
+                    <a href="./courses.html" class="btn">View</a>
+                </div>
+            </article>
+            <!-- Course 6 -->
+            <article class="mix All Photography Intermediate course__card">
+                <div class="image">
+                    <img src="./images/Cover__Photography.png" alt="">
+                </div>
+                <div class="course__info">
+                    <div class="course__header">
+                        <span class="rating">
+                            <h5 class="rating-number">4.7</h5>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half' ></i>
+                            <h5 class="rating-count">(50,82)</h5>
+                        </span>
+                        <span class="price price_free">
+                            <h5>Free</h5>
+                        </span>
+                    </div>
+                    <h3 class="title">How to become a photographer</h3>
+                    <h5 class="subtitle">by: Kassandra Roberst</h5>
+                </div>
+                <div class="button">
+                    <a href="./courses.html" class="btn">Start</a>
+                </div>
+            </article>
+
+
+        </div>
+    </section>
+
+
+
+    <!-- Footer Section
+    ======================================== -->
+    <footer>
+        <div class="container footer__container">
+            
+            <div class="footer__col">
+               <h3>MetaX</h3>
+               <ul class="footer__list">
+                   <li class="footer__list-item">
+                     <a href="./about.html"> About</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                     <a href="#"> What We Offer</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                      <a href="#">Leadership</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                     <a href="#">Careers</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                     <a href="#">Catalog</a> 
+                   </li>
+
+                   <li class="footer__list-item">
+                      <a href="#">Courses Plus</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                      <a href="#">Professional Certificates</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                      <a href="#">Become a Partner</a>
+                   </li>
+               </ul>
+            </div>
+
+            <div class="footer__col">
+               <h3>Community</h3>
+               <ul class="footer__list">
+                   <li class="footer__list-item">
+                      <a href="#">Learners</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                     <a href="#">Partners</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                     <a href="#">Developers</a> 
+                   </li>
+
+                   <li class="footer__list-item">
+                     <a href="#">Beta Testers</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                      <a href="#">Translators</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                     <a href="#">Tech Blog</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                     <a href="#"> Teahing Center</a>
+                   </li>
+               </ul>
+            </div>
+
+            <div class="footer__col">
+               <h3>Privacy</h3>
+               <ul class="footer__list">
+                   <li class="footer__list-item">
+                      <a href="#">Privacy Policy</a> 
+                   </li>
+
+                   <li class="footer__list-item">
+                     <a href="#"> Terms and Conditions</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                      <a href="#">Refund Policy</a>
+                   </li>
+
+                   <li class="footer__list-item">
+                      <a href="#">Data Security</a>
+                   </li>
+
+               </ul>
+            </div>
+
+            <div class="footer__col footer__col-last">
+               <h3>Download App</h3>
+               <a href="#"><img src="./images/App_Store_(iOS)-Badge-Logo.wine.png" alt=""></a>
+               <a href="#"><img src="./images/google-play-badge.png" alt=""></a>
+               <img class="certified-badge" src="./images/Certified_Badge.png" alt="">
+            </div>
+        </div>
+        
+        <div class="container copywright__container">
+           <small> © 2022 MetaX Inc. All rights reserved.</small>
+           
+           <div class="footer__social-icons">
+            <a href="#">
+                <i class='bx bxl-twitter'></i>
+               </a>
+               
+               <a href="#">
+                <i class='bx bxl-facebook-square'></i>
+               </a>
+               
+               <a href="#">
+                <i class='bx bxl-linkedin-square'></i>
+               </a>
+               
+               <a href="#">
+                <i class='bx bxl-youtube'></i>
+               </a>
+           </div>
+           
+        </div>
+    </footer>
+
+
+
+    <!-- Linking JS Courses File -->
+    <script src="./javascript/courses.js"></script>
+    <!-- Linking JS Mixitup Library -->
+    <script src="./javascript/mixitup.min.js"></script>
+    <!-- Linking Main Javascript File -->
+    <script src="./javascript/script.js"></script>
+    <!-- MixitUp Linking -->
+    <script>
+var mixer = mixitup('.courses__container-main', {
+    selectors: {
+    target: '.course__card'
+    },
+    animation: {
+    duration: 300
+    }
+    });
+
+    </script>
+</body>
+</html>

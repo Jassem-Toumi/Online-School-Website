@@ -1,0 +1,191 @@
+@import url("./main__stylesheet.css");
+
+.contact {
+  padding: 12rem 0 2rem !important;
+  margin-bottom: 15rem;
+}
+
+.contact__container {
+  background: var(--primary-gradient-3);
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 4rem;
+  height: 30rem;
+  padding: 4rem;
+}
+
+/* ASIDE 
+====================================== */
+.contact__aside {
+  background: var(--color-gray-shade);
+  padding: 2rem;
+  position: relative;
+  bottom: 10rem;
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.contact__aside h1 {
+  text-align: left;
+  margin: 1.5rem 0 1rem;
+  color: var(--color-dark);
+}
+
+.contact__aside p {
+  font-size: var(----paragraph-lg-b-size);
+  margin-bottom: 2rem;
+  color: var(--color-bg2);
+}
+
+.contact__details li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  color: var(--color-bg2);
+}
+
+.contact__details li i {
+  font-size: 28px;
+  color: var(--color-sucess);
+}
+
+.contact__socials {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 3rem;
+}
+
+.contact__socials a {
+  padding: 0.5rem;
+  background: var(--color-sucess);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
+  transition: var(--transition-short);
+}
+
+.contact__socials a:hover {
+  transform: translateY(-8px);
+}
+
+.contact__socials a i {
+  font-size: 28px;
+}
+
+/* FORM
+=============================================== */
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-right: 4rem;
+}
+
+.form__name {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.contact__form input,
+.contact__form textarea {
+  width: 100%;
+  padding: 1rem;
+  color: var(--color-dark);
+}
+
+.contact__form textarea {
+  height: 10rem;
+}
+/* 
+
+
+
+
+*/
+/* Responsive design for medium devices
+======================================== */
+@media screen and (max-width: 992px) {
+  .contact__container {
+    padding: 2rem;
+    gap: 2rem;
+    grid-template-columns: 45% 55%;
+  }
+
+  .contact__form {
+    margin-right: 2rem;
+  }
+
+  .contact__details li {
+    gap: 0.5rem;
+  }
+
+  .contact__details li i {
+    font-size: 24px;
+  }
+
+  .contact__socials {
+    gap: 0.5rem;
+  }
+
+  .contact__socials a i {
+    font-size: 24px;
+  }
+}
+/* 
+
+
+
+
+*/
+/* Responsive design for Small devices
+======================================== */
+@media screen and (max-width: 767px) {
+  .contact {
+    padding: 2rem 0 2rem !important;
+    margin-bottom: 5rem;
+  }
+  .contact__container {
+    padding: 1rem;
+    gap: 3rem;
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+  .contact__aside p {
+    font-size: var(----paragraph-sm-b-size);
+  }
+  .contact__aside {
+    position: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  .contact__details li h5 {
+    font-size: 1rem;
+  }
+
+  .contact__form {
+    margin-right: 0;
+  }
+
+  .contact__socials {
+    margin-top: 2rem;
+    justify-content: space-between;
+  }
+}
+/* 
+
+
+
+*/
+/* RESPONSIVE DESIGN FOR EXTRA SMALL DEVICES */
+@media screen and (max-width: 359px) {
+  .contact__details li h5 {
+    font-size: 0.8rem;
+  }
+
+  .contact__aside {
+    padding: 1rem;
+  }
+}
