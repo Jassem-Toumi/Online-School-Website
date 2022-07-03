@@ -1,5 +1,5 @@
 # Online-School-Website
-A Static Learning Platform designed and coded by Jassem Toumi. The Website is built only for educational (practice) purposes. Feel Free to Fork it and make your own contributions.
+A Static Learning Platform designed and coded by Jassem Toumi. The Website is built only for educational purposes. Feel Free to Fork it and make your own contributions.
 Notes: Contact me if you need any help or if you want a permission to use it commercially.
 
 Resources used:
